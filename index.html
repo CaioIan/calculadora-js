@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="java-script.js">
+  <script type="text/javascript" src="java-script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@200;400&family=Roboto&family=Spline+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Calculadora com Javascript</title>
+</head>
+<body>
+  <header>
+    <div class="nav-box">
+      <nav>
+        <a href="#">Caio Ian</a>
+      </nav>
+    </div>
+  </header>
+  <div class="background">
+      <div class="calculadora">
+        <h1>Calculadora</h1>
+        <div class="result-div">
+          <p id="resultado"></p>
+        </div>
+        <table>
+          <tr>
+            <td><button onclick="clean()">C</button></td>
+            <td><button onclick="back()"><</button></td>
+            <td><button onclick="insert('/')">/</button></td>
+            <td><button onclick="insert('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td><button onclick="insert('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td><button onclick="insert('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button class="equal-button" onclick="calcular()">=</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button class="zero-button" onclick="insert('0')">0</button></td>
+            <td><button onclick="insert('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
+  </div>
+
+  <footer class="footer-box">
+    <div class="creator-flex">
+      <p>Creator social media</p>
+    </div>
+    <div class="footer-menu">
+    <div class="social-media-flex">
+    <a href="https://github.com/CaioIan" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
+      GitHub
+      </a>
+    </div>
+
+    <div class="social-media-flex">
+    <a href="https://www.linkedin.com/in/caio-ian-oliveira-7b830b20b/" target="_blank">
+    <img src="https://t.ctcdn.com.br/o6YUYZNxhn1ob0FEjQo-a7KapYU=/400x400/smart/i490027.jpeg"/>
+          Linkedin
+      </a>
+      </div>
+      </div>
+  </footer>
+</body>
+</html>
